@@ -1,6 +1,6 @@
 {
   "name": "data-butler",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Retrieve data from the fastest sources, and once obtained, hand it off to be cached",
   "author": {
     "name": "John Bulcher"
