@@ -1,0 +1,43 @@
+{
+  "name": "data-butler",
+  "version": "0.0.0",
+  "description": "Retrieve data from the fastest sources, and once obtained, hand it off to be cached",
+  "author": {
+    "name": "John Bulcher"
+  },
+  "contributors": [
+    {
+      "name": "John Bulcher"
+    }
+  ],
+  "keywords": [],
+  "homepage": "https://github.com/jbulchergist/data-butler",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jbulchergist/data-butler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jbulchergist/data-butler/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib/data-butler",
+  "dependencies": {
+    "private-repo": "git+ssh://git@github.com:jbulchergist/spot.git",
+    "redis": "*"
+  },
+  "devDependencies": {
+    "vows": "*"
+  },
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js test/**/*-test.js test/context/http/*-test.js"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "readmeFilename": "README.md"
+}
